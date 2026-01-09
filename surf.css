@@ -1,11 +1,9 @@
 /* ===== GLOBAL ===== */
 
-/* GLOBAL */
 body {
     margin: 0;
     font-family: "Inter", sans-serif;
 
-    /* Новый фон — как в About */
     background: linear-gradient(180deg, #f3f7ff 0%, #e2edff 50%, #cddffe 100%);
     background-attachment: fixed;
 
@@ -14,7 +12,7 @@ body {
     flex-direction: column;
 }
 
-/* Decorative waves — усилены и синие */
+/* Decorative waves */
 body::before,
 body::after {
     content: "";
@@ -39,14 +37,12 @@ body::after {
     background: rgba(0,200,255,0.22);
 }
 
-
 /* ===== BRAND ===== */
 
 .top-brand {
     text-align: center;
     font-size: 54px;
     font-weight: 800;
-
     margin-top: 55px;
     margin-bottom: 22px;
 
@@ -58,7 +54,6 @@ body::after {
     letter-spacing: 3px;
 }
 
-
 /* ===== NAVBAR ===== */
 
 .nav-bar {
@@ -69,7 +64,6 @@ body::after {
 
     background: rgba(255,255,255,0.6);
     backdrop-filter: blur(10px);
-
     border-bottom: 1px solid #e6eefa;
 }
 
@@ -104,7 +98,6 @@ body::after {
     opacity: 0.45;
 }
 
-/* Center-align divider */
 .divider {
     opacity: .5;
     user-select: none;
@@ -131,7 +124,7 @@ body::after {
 
 .hero p {
     margin-top: 10px;
-    margin-bottom: 35px; /* увеличенный отступ от кнопки */
+    margin-bottom: 35px;
     font-size: 22px;
     color: #3a4555;
     line-height: 1.6;
@@ -146,7 +139,7 @@ body::after {
     animation: fadein 1.2s;
 }
 
-/* ===== BUTTON ===== */
+/* ===== BUTTONS ===== */
 
 .btn-main {
     background: linear-gradient(90deg, #2b72ff, #00a4ff);
@@ -167,7 +160,109 @@ body::after {
     transform: translateY(-2px);
 }
 
-/* ===== FEATURES + PERFORMANCE shared styles ===== */
+.btn-outline {
+    padding: 14px 38px;
+    border-radius: 12px;
+    border: 2px solid #2b72ff;
+    font-size: 18px;
+    font-weight: 600;
+    text-decoration: none;
+    color: #2b72ff;
+    transition: 0.3s;
+}
+
+.btn-outline:hover {
+    background: rgba(43,114,255,0.08);
+    transform: translateY(-2px);
+}
+
+/* ===== DOWNLOAD ===== */
+
+.download {
+    text-align: center;
+    max-width: 1100px;
+    margin: 80px auto;
+}
+
+.download h2 {
+    font-size: 34px;
+    margin-bottom: 10px;
+    color: #0d1a33;
+}
+
+.download p {
+    font-size: 20px;
+    color: #3a4555;
+    margin-bottom: 40px;
+}
+
+.download-grid {
+    display: flex;
+    gap: 32px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.download-card {
+    width: 340px;
+    padding: 32px 28px;
+
+    background: rgba(255,255,255,0.85);
+    border-radius: 16px;
+    border: 1px solid rgba(43,114,255,0.18);
+    box-shadow: 0 4px 14px rgba(43,114,255,0.08);
+    backdrop-filter: blur(6px);
+
+    text-align: left;
+
+    /* 🔑 ключевое */
+    display: flex;
+    flex-direction: column;
+}
+
+.download-card.alt {
+    border: 1px solid rgba(43,114,255,0.35);
+}
+
+.download-card h3 {
+    font-size: 24px;
+    margin-bottom: 12px;
+    color: #0d1a33;
+}
+
+.download-card p {
+    font-size: 17px;
+    margin-bottom: 18px;
+    color: #3a4555;
+}
+
+.download-card ul {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 24px;
+}
+
+.download-card li {
+    font-size: 16px;
+    margin-bottom: 8px;
+}
+
+.download-card a {
+    margin-top: auto;
+    width: 100%;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+
+.download .note {
+    margin-top: 28px;
+    font-size: 14px;
+    color: #667085;
+    opacity: 0.85;
+}
+
+/* ===== FEATURES + PERFORMANCE ===== */
 
 .features ul,
 .performance ul {
@@ -180,21 +275,18 @@ body::after {
     font-size: 20px;
     margin: 14px auto;
     padding: 14px 16px;
-
-    max-width: 600px; 
+    max-width: 600px;
     text-align: left;
 
     background: rgba(255,255,255,0.8);
     border-radius: 10px;
     backdrop-filter: blur(6px);
     box-shadow: 0 2px 6px rgba(0,50,120,0.08);
-
     color: #333;
 
     transition: 0.25s;
 }
 
-/* Hover effect only */
 .features li:hover,
 .performance li:hover {
     background: rgba(240,248,255,0.92);
@@ -212,7 +304,7 @@ body::after {
     letter-spacing: .5px;
 }
 
-/* ===== PERFORMANCE extra ===== */
+/* ===== PERFORMANCE ===== */
 
 .performance p {
     text-align: center;
@@ -230,21 +322,19 @@ body::after {
 
 .footer {
     margin-top: auto;
-    text-align: center;      /* центрируем */
-    padding: 28px;           /* чуть больше воздуха */
+    text-align: center;
+    padding: 28px;
 
     background: rgba(255,255,255,0.9);
     border-top: 1px solid #d4def3;
 
     font-size: 16px;
-    font-weight: 600;        /* жирнее */
-    color: #445065;          /* тёмно-серый с синеватым */
+    font-weight: 600;
+    color: #445065;
 
-    letter-spacing: 0.3px;   /* легче читается */
-
-    text-shadow: 0 0 6px rgba(42,105,255,0.15);  /* лёгкое неоновое свечение */
+    letter-spacing: 0.3px;
+    text-shadow: 0 0 6px rgba(42,105,255,0.15);
 }
-
 
 /* ===== ANIMATION ===== */
 
