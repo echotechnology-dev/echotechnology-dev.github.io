@@ -246,9 +246,6 @@ body::after {
     font-size: 16px;
     font-weight: 600;
     color: #445065;
-
-    letter-spacing: 0.3px;
-    text-shadow: 0 0 6px rgba(42,105,255,0.15);
 }
 .footer-mail {
     color: #2b72ff;
