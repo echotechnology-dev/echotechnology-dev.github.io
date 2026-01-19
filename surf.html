@@ -12,7 +12,7 @@
 
   <!-- Brand -->
   <div class="top-brand">
-      Echo Technology
+    Echo Technology
   </div>
 
   <!-- Navigation -->
@@ -20,7 +20,7 @@
     <a href="/">Home</a>
     <span class="divider">|</span>
 
-    <a href="surf.html">Surf Browser</a>
+    <a href="surf.html" class="active">Surf Browser</a>
     <span class="divider">|</span>
 
     <span class="soon">Soon</span>
@@ -37,82 +37,111 @@
 
   <!-- Hero -->
   <section class="hero">
-  <img src="assets/surf-logo.png" alt="Surf Browser Logo" class="surf-logo">
+    <img src="assets/surf-logo.png" alt="Surf Browser Logo" class="surf-logo">
 
-  <h1>Surf Browser</h1>
+    <h1>Surf Browser</h1>
 
-  <p>
-    Surf Browser is a lightweight Chromium-based browser
-    built on <strong>ungoogled-chromium</strong>.
-  </p>
+    <p>
+      Surf Browser is a lightweight Chromium-based browser
+      built on <strong>ungoogled-chromium</strong>.
+    </p>
 
-  <p>
-    It removes Google services, telemetry,
-    and unnecessary background activity —
-    while preserving compatibility with modern websites.
-  </p>
-</section>
+    <p>
+      It removes Google services, telemetry,
+      and unnecessary background activity —
+      while preserving compatibility with modern websites.
+    </p>
+  </section>
 
-
-    <!-- Download -->
+  <!-- Download -->
   <section class="download">
-  <h2>Download Surf Browser</h2>
+    <h2>Download Surf Browser</h2>
 
-  <p>
-    A privacy-respecting browser for everyday use.
-    No accounts. No tracking. No background noise.
-  </p>
+    <p>
+      A privacy-respecting browser for everyday use.
+      No accounts. No tracking. No background noise.
+    </p>
 
-  <div class="download-grid single">
+    <div class="download-grid">
 
-    <div class="download-card">
-      <h3>Surf Browser (Windows) Windows 64-bit required</h3>
+      <!-- x64 -->
+      <div class="download-card">
+        <h3>Surf Browser — Windows 64-bit</h3>
 
-      <p>
-        Based on ungoogled-chromium.<br>
-        Optimized for efficiency, stability,
-        and predictable behavior.
-      </p>
+        <p>
+          Recommended for most systems.<br>
+          Based on ungoogled-chromium.
+        </p>
 
-      <ul>
-        <li>✔ No Google services</li>
-        <li>✔ Reduced background activity</li>
-        <li>✔ Strong website compatibility</li>
-        <li>✔ Suitable for low-end hardware</li>
-      </ul>
+        <ul>
+          <li>✔ Best performance on modern hardware</li>
+          <li>✔ No Google services</li>
+          <li>✔ Reduced background activity</li>
+          <li>✔ Strong website compatibility</li>
+        </ul>
 
-      <a href=https://github.com/echotechnology-dev/echotechnology-dev.github.io/releases/download/v1.0.0/SurfBrowser_Ungoogled_Setup.exe
-class="btn-main"
-  data-goatcounter-click="download-surf">
-  Download for Windows
-</a>
+        <a href="https://github.com/echotechnology-dev/echotechnology-dev.github.io/releases/download/v1.0.0/SurfBrowser_Ungoogled_Setup.exe"
+           class="btn-main"
+           data-goatcounter-click="download-surf-x64">
+          Download 64-bit
+        </a>
+      </div>
+
+      <!-- x86 -->
+      <div class="download-card alt">
+        <h3>Surf Browser — Windows 32-bit</h3>
+
+        <p>
+          For older or legacy systems.<br>
+          Same core, reduced memory footprint.
+        </p>
+
+        <ul>
+          <li>✔ Supports legacy hardware</li>
+          <li>✔ No Google services</li>
+          <li>✔ Lightweight and stable</li>
+          <li>✔ Ideal for low-end PCs</li>
+        </ul>
+
+        <a href="https://github.com/echotechnology-dev/echotechnology-dev.github.io/releases/download/v1.0.0/SurfBrowser_Ungoogled_Setup_x86.exe"
+           class="btn-outline"
+           data-goatcounter-click="download-surf-x86">
+          Download 32-bit
+        </a>
+      </div>
 
     </div>
 
-  </div>
+    <!-- Startup note -->
+    <p class="note">
+      <strong>Note about startup behavior:</strong><br>
+      On first launch, you may briefly see a blank or default Chromium tab
+      before Surf Browser’s start page appears.
+      This is expected behavior during the initial startup phase,
+      before extensions are fully loaded.
+      The start page opens automatically and does not affect privacy,
+      security, or browsing functionality.
+    </p>
 
-  <p class="note">
-    Surf Browser is distributed by Echo Technology.
-    Built on open-source foundations with transparent defaults.
-  </p>
-</section>
-
-
+    <p class="note">
+      Surf Browser is distributed by Echo Technology.<br>
+      Built on open-source foundations with transparent defaults.
+    </p>
+  </section>
 
   <!-- Features -->
   <section class="features">
-  <h2>Key Features</h2>
+    <h2>Key Features</h2>
 
-  <ul>
-    <li>🚀 Fast startup with low resource usage</li>
-    <li>🧩 No telemetry or background services</li>
-    <li>🔐 No sync, accounts, ads, or tracking</li>
-    <li>💾 Portable — runs from any folder</li>
-    <li>🧼 Clean, distraction-free interface</li>
-    <li>🌍 Chromium core for real-world compatibility</li>
-  </ul>
-</section>
-
+    <ul>
+      <li>🚀 Fast startup with low resource usage</li>
+      <li>🧩 No telemetry or background services</li>
+      <li>🔐 No sync, accounts, ads, or tracking</li>
+      <li>💾 Portable — runs from any folder</li>
+      <li>🧼 Clean, distraction-free interface</li>
+      <li>🌍 Chromium core for real-world compatibility</li>
+    </ul>
+  </section>
 
   <!-- Performance -->
   <section class="performance">
@@ -127,24 +156,25 @@ class="btn-main"
     </ul>
 
     <p class="perf-quote">
-      While mainstream browsers become heavier each year, Surf focuses on efficiency
-      and low resource usage — keeping browsing fast, simple, and accessible for everyone.
+      While mainstream browsers become heavier each year,
+      Surf focuses on efficiency and low resource usage —
+      keeping browsing fast, simple, and accessible.
     </p>
   </section>
 
   <!-- Footer -->
-<footer class="footer">
-  © 2026 Echo Technology — Privacy by Design ·
-  <a href="mailto:talk.echo@proton.me" class="footer-mail">
-    talk.echo@proton.me
-  </a>
-</footer>
+  <footer class="footer">
+    © 2026 Echo Technology — Privacy by Design ·
+    <a href="mailto:talk.echo@proton.me" class="footer-mail">
+      talk.echo@proton.me
+    </a>
+  </footer>
 
-<script
-  data-goatcounter="https://echo.goatcounter.com/count"
-  async
-  src="//gc.zgo.at/count.js">
-</script>
+  <script
+    data-goatcounter="https://echo.goatcounter.com/count"
+    async
+    src="//gc.zgo.at/count.js">
+  </script>
 
 </body>
 </html>
