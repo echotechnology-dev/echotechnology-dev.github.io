@@ -87,8 +87,8 @@ body::after {
     transform: translateY(-2px);
 }
 
-.nav-bar a:hover::after,
-.nav-bar a.active::after {
+.nav-bar a:hover::after {
+
     content: "";
     position: absolute;
     bottom: -6px;
