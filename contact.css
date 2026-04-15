@@ -1,0 +1,45 @@
+/* HERO (локально) */
+.contact-hero {
+    max-width: 750px;
+}
+
+/* ===== EMAIL ===== */
+.contact-main {
+    text-align: center;
+    margin: 60px auto;
+    max-width: 700px;
+}
+
+.contact-email {
+    display: inline-block;
+    margin-top: 10px;
+
+    font-size: 22px;
+    font-weight: 600;
+    color: #2b72ff;
+    text-decoration: none;
+
+    border-bottom: 2px solid rgba(43,114,255,0.3);
+    padding-bottom: 2px;
+
+    transition: 0.2s;
+}
+
+.contact-email:hover {
+    border-color: #2b72ff;
+}
+
+/* ===== IDEAS ===== */
+.contact-ideas {
+    text-align: center;
+    margin: 60px auto;
+    max-width: 700px;
+}
+
+/* ===== RESPONSE ===== */
+.contact-response {
+    text-align: center;
+    margin: 60px auto 100px;
+    max-width: 700px;
+    opacity: 0.7;
+}
