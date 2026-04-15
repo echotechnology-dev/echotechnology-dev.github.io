@@ -1,6 +1,9 @@
 /* ===== SECTIONS ===== */
-section {
-    max-width: 880px;
+.why-choose-us,
+.mission,
+.audience,
+.cta {
+    max-width: 900px;
     margin: 50px auto;
     text-align: center;
 }
